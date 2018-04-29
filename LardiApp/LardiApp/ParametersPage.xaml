@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LardiApp.ParametersPage">
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical">
+            <StackLayout
+                Orientation="Horizontal">
+                <Label 
+                    x:Name="lblAreaIdFrom"
+                    Text="AreaIdFrom : "
+                    VerticalOptions="Center"/>
+                <Editor 
+                    x:Name="edtAreaIdFrom"
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal">
+                <Label 
+                    x:Name="lblAreaIdTo"
+                    Text="AreaIdTo : "
+                    VerticalOptions="Center"/>
+                <Editor 
+                    x:Name="edtAreaIdTo"
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal">
+                <Label 
+                    x:Name="lblMassTonMin"
+                    Text="Mass ton min : "
+                    VerticalOptions="Center"/>
+                <Editor 
+                    x:Name="edtMassTonMin"
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal">
+                <Label 
+                    x:Name="lblMassTonMax"
+                    Text="Mass ton max : "
+                    VerticalOptions="Center"/>
+                <Editor 
+                    x:Name="edtMassTonMax"
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal">
+                <Label 
+                    x:Name="lblVolumeMin"
+                    Text="Volume min : "
+                    VerticalOptions="Center"/>
+                <Editor 
+                    x:Name="edtVolumeMin"
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal">
+                <Label 
+                    x:Name="lblVolumeMax"
+                    Text="Volume max : "
+                    VerticalOptions="Center"/>
+                <Editor 
+                    x:Name="edtVolumeMax"
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal">
+                <Label 
+                    x:Name="lblTimerSeconds"
+                    Text="Update interval in seconds: "
+                    VerticalOptions="Center"/>
+                <Editor 
+                    x:Name="edtTimerSeconds"
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Button
+                x:Name="btnSubmitOrderParameters"
+                Text="Submit"
+                Clicked="btnSubmitOrderParameters_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
